@@ -1,9 +1,208 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Latihan 3</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
+
+      table {
+        margin: auto;
+        border-collapse: collapse;
+      }
+
+      td {
+        padding: 15px;
+      }
+
+      img {
+        border-radius: 10px;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .link-box a {
+        display: inline-block;
+        margin: 8px;
+        padding: 10px 15px;
+        background: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .link-box a:hover {
+        background: #2c80b4;
+      }
+
+      .bookmark a {
+        margin-right: 15px;
+        color: #e74c3c;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .bookmark a:hover {
+        text-decoration: underline;
+      }
+
+      .berita {
+        line-height: 1.6;
+        text-align: justify;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <h1>Latihan HTML 3</h1>
+
+      <!-- ===================== -->
+      <!-- 1 Gambar + Table -->
+      <!-- ===================== -->
+
+      <h2>1. Gambar dengan Layout Table</h2>
+
+      <table border="1">
+        <tr>
+          <td align="center">
+            <h3>Foto 1</h3>
+
+            <img src="img/penguin-1.jpg" width="350" />
+          </td>
+        </tr>
+      </table>
+
+      <br /><br />
+
+      <!-- ===================== -->
+      <!-- 2 Image Map -->
+      <!-- ===================== -->
+
+      <h2>2. Image Map</h2>
+
+      <center>
+        <img src="img/penguin-2.jpg" width="450" usemap="#mapfoto" />
+      </center>
+
+      <map name="mapfoto">
+        <area
+          shape="rect"
+          coords="50,50,200,200"
+          href="https://pnj.ac.id"
+          target="_blank"
+        />
+
+        <area
+          shape="circle"
+          coords="320,160,60"
+          href="https://www.w3schools.com"
+          target="_blank"
+        />
+      </map>
+
+      <br /><br />
+
+      <!-- ===================== -->
+      <!-- 3 Hyperlink -->
+      <!-- ===================== -->
+
+      <h2>3. Hyperlink Target</h2>
+
+      <div class="link-box">
+        <a href="https://www.wikipedia.org" target="_blank"> Target Blank </a>
+
+        <a href="https://www.cnnindonesia.com" target="_self"> Target Self </a>
+
+        <a href="https://www.kompas.com" target="_parent"> Target Parent </a>
+      </div>
+
+      <br /><br />
+
+      <!-- ===================== -->
+      <!-- 4 Bookmark -->
+      <!-- ===================== -->
+
+      <h2>4. Bookmark Berita</h2>
+
+      <div class="bookmark">
+        <a href="#berita1">Berita Teknologi</a>
+        <a href="#berita2">Berita Pendidikan</a>
+        <a href="#berita3">Berita Ekonomi</a>
+      </div>
+
+      <hr />
+
+      <div class="berita">
+        <h3 id="berita1">Berita Teknologi</h3>
+
+        <p>
+          Perkembangan teknologi kecerdasan buatan semakin pesat. Banyak
+          perusahaan teknologi mengembangkan berbagai aplikasi berbasis AI yang
+          membantu manusia dalam pekerjaan sehari-hari seperti analisis data,
+          otomatisasi pekerjaan, hingga pengembangan software modern.
+        </p>
+
+        <p>
+          Teknologi cloud computing juga semakin banyak digunakan oleh startup
+          untuk mengembangkan aplikasi tanpa perlu mengelola server sendiri.
+        </p>
+
+        <br /><br />
+
+        <h3 id="berita2">Berita Pendidikan</h3>
+
+        <p>
+          Transformasi digital di bidang pendidikan terus berkembang. Banyak
+          sekolah memanfaatkan platform digital untuk pembelajaran, pengumpulan
+          tugas, hingga manajemen data siswa secara online.
+        </p>
+
+        <p>
+          Dengan adanya teknologi ini, proses belajar menjadi lebih fleksibel
+          dan dapat diakses dari berbagai tempat.
+        </p>
+
+        <br /><br />
+
+        <h3 id="berita3">Berita Ekonomi</h3>
+
+        <p>
+          Perekonomian digital di Indonesia terus meningkat seiring
+          berkembangnya internet dan teknologi mobile. Banyak pelaku usaha
+          memanfaatkan platform digital untuk menjangkau pasar yang lebih luas.
+        </p>
+
+        <p>
+          Bisnis berbasis teknologi diprediksi akan menjadi salah satu pendorong
+          utama pertumbuhan ekonomi di masa depan.
+        </p>
+      </div>
+
+      <br /><br /><br />
+    </div>
+  </body>
 </html>
